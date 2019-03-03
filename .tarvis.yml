@@ -1,0 +1,8 @@
+deploy:
+  provider: releases
+  api_key:
+    secure: #your api key will be here
+  file: build/ios/iphoneos/app.ipa
+  skip_cleanup: true #important or your built app would be deleted
+  on:
+    repo: #your repo will be here
